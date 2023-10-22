@@ -36,3 +36,7 @@ if not launch.is_installed("mediapipe"):
 if not launch.is_installed("edge_tts"):
     print("--installing edge_tts...")
     launch.run_pip("install edge_tts", "requirements for mediapipe")
+
+if not launch.is_installed("diffusers"):
+    print("--installing diffusers...")
+    launch.run_pip("install diffusers", "requirements for facechain")
